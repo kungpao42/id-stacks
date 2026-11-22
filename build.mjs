@@ -271,4 +271,23 @@ if (c.batchgeo) {
 `;
   await writeFile(`dist/${c.slug}-batchgeo/${c.gcs?.file || c.slug + '.html'}`, wrapper);
 }
+// Gemini prompt for the citations Google Sheet (template: prompts/citations-sheet.md)
+{
+  const tpl = await readFile(new URL('./prompts/citations-sheet.md', import.meta.url), 'utf8');
+  const cit = c.citations || {};
+  const nice = { facebook: 'Facebook', instagram: 'Instagram', tiktok: 'TikTok', x: 'X', twitter: 'X', youtube: 'YouTube', linkedin: 'LinkedIn', pinterest: 'Pinterest', yelp: 'Yelp', nextdoor: 'Nextdoor' };
+  const host = (u) => { try { const h = new URL(u).hostname.replace(/^www\./, '').split('.')[0]; return nice[h] || h; } catch { return 'Profile'; } };
+  const known = [
+    ['Website', c.website], ['Google Business Profile', `https://maps.google.com/maps?cid=${c.gbpCid}`],
+    ...c.sameAs.map((u) => [host(u), u]),
+    ['ID page', c.pageUrl], ['Google Cloud page', c.secondStackUrl], ['BatchGeo map', c.batchgeo?.mapUrl],
+  ].filter(([, u]) => u).map(([n, u]) => `- ${n}: ${u}`).join('\n');
+  const vars = {
+    name: c.name, address: `${c.street}, ${c.city}, ${c.stateAbbr} ${c.zip}`, phone: c.phone, website: c.website,
+    category: cit.category || c.category, gbp: `https://maps.google.com/maps?cid=${c.gbpCid}`, knownAssets: known,
+    extraSources: (cit.extraSources || []).map((x) => x + ', ').join(''), city: c.city, region: cit.region || c.state,
+    napNote: cit.napNote ? ' ' + cit.napNote : '', keywords: c.keywords.join(', '),
+  };
+  await writeFile(`dist/${c.slug}-citations-prompt.md`, tpl.replace(/\{\{(\w+)\}\}/g, (_, k) => vars[k] ?? ''));
+}
 console.log('built', out);

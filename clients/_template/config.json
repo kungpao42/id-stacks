@@ -113,5 +113,13 @@
   "gcs": {
     "bucket": "g-bigstacks",
     "file": "Business-Name.html"
+  },
+  "citations": {
+    "category": "Category (main services)",
+    "region": "County",
+    "extraSources": [
+      "industry-specific directories or booking sites"
+    ],
+    "napNote": "Optional: note a recent move or phone change here."
   }
 }

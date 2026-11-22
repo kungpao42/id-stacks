@@ -221,5 +221,14 @@
     "bucket": "g-bigstacks",
     "file": "La-Sheida-Spa.html"
   },
-  "imageDate": "2026-11-22"
+  "imageDate": "2026-11-22",
+  "citations": {
+    "category": "Day Spa (eyebrow threading, facials, waxing)",
+    "region": "Loudoun County",
+    "extraSources": [
+      "Booksy/Vagaro/StyleSeat/Fresha (booking sites)",
+      "Salon Lofts (the business is inside Salon Lofts at the Village at Leesburg)"
+    ],
+    "napNote": "The business recently moved, so old-address listings are likely."
+  }
 }

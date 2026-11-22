@@ -23,6 +23,8 @@ clients/<slug>/assets/        logo + hero image (source files)
 clients/<slug>/homepage-schema.html   JSON-LD for the client's own homepage
 dist/<slug>/                  upload to s3://bigstack/<slug>/
 dist/<slug>-batchgeo/         BatchGeo paste data + the GCS wrapper page
+dist/<slug>-citations-prompt.md   Gemini prompt for the citations Google Sheet
+prompts/citations-sheet.md    template for that prompt ({{placeholders}} filled from config)
 ```
 
 `dist/` is committed on purpose: it is the record of what is live.
@@ -69,8 +71,12 @@ that is already live on S3.
    Save it as `clients/<slug>/homepage-schema.html`. If an SEO plugin emits Organization or Local Business
    schema, turn those off so there is one business node (SEOPress: Social Networks > Knowledge Graph = None;
    PRO > Local Business off; Titles & Metas > Home site name = business name).
-8. **Verify the chain** in a browser: homepage `@id` -> ID page with all images -> GCS page -> map with pins.
-9. **Indexing.** Search Console URL-prefix properties for `https://bigstack.s3.amazonaws.com/<slug>/` and
+8. **Citations sheet.** Paste `dist/<slug>-citations-prompt.md` into Gemini to build a Google Sheet of the
+   business's citations and branded profiles (with NAP-match flags, so it doubles as a cleanup list). Per-client
+   hints go in `config.citations` (category wording, region, extra sources, a note about a recent move). Publish
+   the sheet (File > Share > Publish to web > Embed) for embedding on the ID page.
+9. **Verify the chain** in a browser: homepage `@id` -> ID page with all images -> GCS page -> map with pins.
+10. **Indexing.** Search Console URL-prefix properties for `https://bigstack.s3.amazonaws.com/<slug>/` and
    `https://storage.googleapis.com/g-bigstacks/`, HTML-file verification, then Request indexing for both
    pages (ID page first). Check with `site:` queries (DataForSEO, one task per live request).
 
