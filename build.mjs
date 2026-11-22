@@ -211,7 +211,12 @@ ${c.secondStackUrl ? `<div class="col-lg-6"><iframe width="100%" height="600" sr
 <div class="col-lg-5 side-img"><img src="${gbp(c.gbpPhotos.kw7)}" alt="${esc(k7)}"></div>
 </div></div></section>
 
-<section class="map">
+${c.citations?.sheetUrl ? `<section class="band"><div class="container">
+<h2 id="citations">${esc(c.name)} Citations &amp; Profiles</h2>
+<p>Where ${esc(c.name)} is listed online, with links to each profile.</p>
+<iframe src="${esc(c.citations.sheetUrl)}" width="100%" height="600" title="${esc(c.name)} citations and profiles" frameborder="0" loading="lazy">${esc(c.name)} citations and profiles</iframe>
+</div></section>
+` : ''}<section class="map">
 <iframe src="https://maps.google.com/maps?q=${encodeURIComponent(c.mapsQuery)}&output=embed" width="100%" height="480" loading="lazy">${esc(H1)}</iframe>
 </section>
 

@@ -74,7 +74,8 @@ that is already live on S3.
 8. **Citations sheet.** Paste `dist/<slug>-citations-prompt.md` into Gemini to build a Google Sheet of the
    business's citations and branded profiles (with NAP-match flags, so it doubles as a cleanup list). Per-client
    hints go in `config.citations` (category wording, region, extra sources, a note about a recent move). Publish
-   the sheet (File > Share > Publish to web > Embed) for embedding on the ID page.
+   the sheet (File > Share > Publish to web > Embed) and put its `src` in `citations.sheetUrl`; the build then adds a
+   "Citations & Profiles" section (brand H2, no keyword) between kw7 and the Google map.
 9. **Verify the chain** in a browser: homepage `@id` -> ID page with all images -> GCS page -> map with pins.
 10. **Indexing.** Search Console URL-prefix properties for `https://bigstack.s3.amazonaws.com/<slug>/` and
    `https://storage.googleapis.com/g-bigstacks/`, HTML-file verification, then Request indexing for both
@@ -158,4 +159,4 @@ with keyword variants, each linking to the GBP).
 
 | Client | ID page | Map | Built |
 |---|---|---|---|
-| La Sheida Spa | https://bigstack.s3.amazonaws.com/lasheidaspa/id.html | https://batchgeo.com/map/c5e3f9441a7dcd23182954e4c1d5a2fc | 2026-11-22 |
+| La Sheida Spa | https://bigstack.s3.amazonaws.com/lasheidaspa/id.html | https://batchgeo.com/map/c5e3f9441a7dcd23182954e4c1d5a2fc | 2026-11-22 (citations sheet added same day) |

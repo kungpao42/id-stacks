@@ -120,6 +120,7 @@
     "extraSources": [
       "industry-specific directories or booking sites"
     ],
-    "napNote": "Optional: note a recent move or phone change here."
+    "napNote": "Optional: note a recent move or phone change here.",
+    "sheetUrl": "Published Google Sheet embed URL (pubhtml?widget=true&headers=false); leave empty to omit the section"
   }
 }
