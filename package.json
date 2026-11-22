@@ -1,0 +1,8 @@
+{
+  "name": "id-stacks",
+  "private": true,
+  "type": "module",
+  "description": "Generator for local-SEO @ID stacks: S3 ID page, GCS wrapper page, BatchGeo map data",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": { "sharp": "^0.35.5" }
+}

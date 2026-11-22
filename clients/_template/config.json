@@ -1,0 +1,117 @@
+{
+  "slug": "clientslug",
+  "pageUrl": "https://bigstack.s3.amazonaws.com/clientslug/id.html",
+  "name": "Business Name",
+  "category": "Primary Category",
+  "city": "City",
+  "state": "State",
+  "stateAbbr": "ST",
+  "zip": "00000",
+  "street": "123 Main St, Suite 100",
+  "phone": "000-000-0000",
+  "email": "owner@example.com",
+  "website": "https://example.com/",
+  "gbpCid": "GBP CID number",
+  "mapsQuery": "Business Name, 123 Main St, City, ST 00000",
+  "countyMapEmbed": "Google Maps embed URL for the county (Share > Embed a map)",
+  "sameAs": [
+    "https://www.facebook.com/...",
+    "https://www.instagram.com/..."
+  ],
+  "metaDescription": "One or two sentences, real facts only.",
+  "shortDescription": "One sentence for the LocalBusiness schema.",
+  "youtubeId": "",
+  "youtubeUploadDate": "",
+  "youtubeDuration": "",
+  "secondStackUrl": "",
+  "logo": "assets/logo.png",
+  "hero": "assets/hero.jpg",
+  "imageDate": "YYYY-MM-DD (set once at first build, never change after upload)",
+  "categoryWiki": "https://en.wikipedia.org/wiki/<Category>",
+  "categoryWikiTitle": "Category",
+  "cityWiki": "https://en.wikipedia.org/wiki/<City>,_<State>",
+  "keywords": [
+    "kw1 primary (H2)",
+    "kw2 (H2)",
+    "kw3 (H3, money-site iframe)",
+    "kw4 (H3, GBP photo)",
+    "kw5 (H4, GCS/BatchGeo iframe)",
+    "kw6 (H5, GBP photo)",
+    "kw7 (H6, GBP photo)"
+  ],
+  "gbpPhotos": {
+    "kw4": "AF1Qip... media ID",
+    "kw6": "AF1Qip... media ID",
+    "kw7": "AF1Qip... media ID"
+  },
+  "usefulLinks": [
+    [
+      "Services",
+      "https://example.com/services/"
+    ],
+    [
+      "Contact Us",
+      "https://example.com/contact/"
+    ]
+  ],
+  "contactUrl": "https://example.com/contact/",
+  "copy": {
+    "kw1": [
+      "Paragraph one.",
+      "Paragraph two."
+    ],
+    "kw2": [
+      "Paragraph one.",
+      "Paragraph two."
+    ],
+    "kw3": [
+      "Paragraph one.",
+      "Paragraph two."
+    ],
+    "kw4": [
+      "Paragraph one.",
+      "Paragraph two."
+    ],
+    "kw5": [
+      "Paragraph one.",
+      "Paragraph two."
+    ],
+    "kw6": [
+      "Paragraph one.",
+      "Paragraph two."
+    ],
+    "kw7": [
+      "Paragraph one.",
+      "Paragraph two."
+    ]
+  },
+  "batchgeo": {
+    "mapTitle": "kw5 - Business Name",
+    "mapUrl": "",
+    "description": [
+      "First paragraph starts with <a href=\"https://www.google.com/maps?cid=CID\">Business Name</a>.",
+      "...",
+      "https://example.com/"
+    ],
+    "rows": [
+      [
+        "full street address",
+        "Business Name",
+        "000-000-0000",
+        "https://example.com/",
+        "kw5"
+      ],
+      [
+        "City, ST",
+        "keyword",
+        "",
+        "GBP",
+        "kw5"
+      ]
+    ]
+  },
+  "gcs": {
+    "bucket": "g-bigstacks",
+    "file": "Business-Name.html"
+  }
+}

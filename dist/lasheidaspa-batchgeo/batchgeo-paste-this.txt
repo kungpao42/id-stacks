@@ -1,0 +1,16 @@
+Address	Target Company Name	Phone Number	URL	Keyword Title
+1601 Village Market Blvd SE, Suite 100, Leesburg, VA 20175	La Sheida Spa	571-218-0986	https://lasheidaspa.com/	Esthetician Leesburg
+Leesburg, VA	Esthetician Leesburg		https://www.google.com/maps?cid=15452416542071472731	Esthetician Leesburg
+Linden Hill, Leesburg, VA 20175	Eyebrow Threading		https://www.google.com/maps?cid=15452416542071472731	Esthetician Leesburg
+Greenway Farm, Leesburg, VA 20175	Facial Spa Leesburg		https://www.google.com/maps?cid=15452416542071472731	Esthetician Leesburg
+Lansdowne, VA 20176	Day Spa Leesburg		https://www.google.com/maps?cid=15452416542071472731	Esthetician Leesburg
+Belmont, VA 20147	Waxing Leesburg		https://www.google.com/maps?cid=15452416542071472731	Esthetician Leesburg
+Ashburn, VA 20147	Eyebrow Shaping		https://www.google.com/maps?cid=15452416542071472731	Esthetician Leesburg
+Paeonian Springs, VA	Eyebrow Threading Leesburg		https://www.google.com/maps?cid=15452416542071472731	Esthetician Leesburg
+Hamilton, VA 20158	Brazilian Wax Leesburg		https://www.google.com/maps?cid=15452416542071472731	Esthetician Leesburg
+Battlefield Pkwy SE, Leesburg, VA 20175	Eyebrow Threading Near me		https://www.google.com/maps?cid=15452416542071472731	Eyebrow Threading
+Edwards Ferry Rd NE, Leesburg, VA 20176	Facial Spa Near me		https://www.google.com/maps?cid=15452416542071472731	Eyebrow Threading
+Fort Evans Rd NE, Leesburg, VA 20176	Esthetician Near me		https://www.google.com/maps?cid=15452416542071472731	Eyebrow Threading
+Sycolin Rd SE, Leesburg, VA 20175	Waxing Near me		https://www.google.com/maps?cid=15452416542071472731	Eyebrow Threading
+Catoctin Cir SW, Leesburg, VA 20175	Day Spa Near me		https://www.google.com/maps?cid=15452416542071472731	Eyebrow Threading
+Plaza St NE, Leesburg, VA 20176	Eyebrow Shaping Near me		https://www.google.com/maps?cid=15452416542071472731	Eyebrow Threading
