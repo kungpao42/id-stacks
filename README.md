@@ -94,6 +94,10 @@ that is already live on S3.
   Claude in Chrome (Brave) for anything needing his logins.
 - **The cloud sandbox can't reach** S3, the client's site or Instagram directly; read them through a browser.
 - The hero filename depends on `imageDate` (see Build).
+- **Search Console meta-tag verification of the folder property** (`https://bigstack.s3.amazonaws.com/<slug>/`) needs
+  a page at the folder address, which S3 doesn't serve by default. PutObject a small HTML page (meta tag + link to
+  id.html, canonical id.html) with Key `<slug>/` and ContentType `text/html`. Also set `googleSiteVerification` in
+  the config so id.html carries the tag.
 
 ## Rules
 
